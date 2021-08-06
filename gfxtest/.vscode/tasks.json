@@ -1,0 +1,28 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "C/C++: xtensa-lx106-elf-gcc.exe build active file",
+			"command": "C:/Users/marti/.platformio/packages/toolchain-xtensa/bin/xtensa-lx106-elf-gcc.exe",
+			"args": [
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+				"-mlongcalls",
+				"-mtext-section-literals",
+				"-Wall",
+				"-pedantic"
+			],
+			"options": {
+				"cwd": "C:/Users/marti/.platformio/packages/toolchain-xtensa/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build",
+			"detail": "compiler: C:/Users/marti/.platformio/packages/toolchain-xtensa/bin/xtensa-lx106-elf-gcc.exe"
+		}
+	]
+}
