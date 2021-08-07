@@ -39,7 +39,7 @@
 #define STATUS_TOPIC "/IoD/status/out\0"
 #define RQ_STATUS_TOPIC "/IoD/status/rq\0"
 #define TEMP_TOPIC "/ESP/temp/out\0"
-#define CUSTOM_TOPIC
+#define CUSTOM_TOPIC "/everything/cool_story"
 
 void mqttReconnect(const char *cID, const char *bUser, const char *bPass);
 void mqttCallback(char *topic, byte *payload, unsigned int length);
