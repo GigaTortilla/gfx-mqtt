@@ -179,11 +179,11 @@ void loop()
     }
     
     // Checking whether or not the MQTT connection is still working and reconnecting if it's not
-    // if (!mqttClient.connected())
-    // {
-    //   mqttReconnect(CLIENT_ID, brokerUser, brokerPass);
-    // }
-    // mqttClient.loop();
+    if (!mqttClient.connected())
+    {
+      mqttReconnect(CLIENT_ID, brokerUser, brokerPass);
+    }
+    mqttClient.loop();
 
     // Updates the temperature screen if required
     if (i_currentScreen == 1)
